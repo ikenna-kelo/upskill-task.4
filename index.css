@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    color: white;
+}
+
+body {
+    background-color: rgb(255, 255, 250);
+}
+    
+header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.845), rgb(0, 64, 255));
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.hero h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px rgb(0, 64, 255);
+}
+
+.hero p {
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 0; 
+}
+
+.hero .cta {
+    border-radius: 5px;
+    background-color:  rgb(0, 64, 255);
+    padding: 8px 20px;
+    color: white;
+    margin: 10px 0;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 1s ease-in;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: aliceblue;
+    color: rgb(0, 64, 255);
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color:  rgb(190, 201, 255);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+    flex-grow: 2;
+     
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.grid-container {
+     display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card p {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.card button:hover {
+    cursor: pointer;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    color:  rgb(190, 213, 255);
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #333;
+    padding-top: 10px;
+    color: aliceblue;
+}
+ 
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header h1 {
+        align-items: start;
+    }
+    
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
